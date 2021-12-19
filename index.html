@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+<title>Frontend Mentor | Time tracking dashboard</title>
+  <!-- bootstrp -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- stylesheet -->
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" media="screen and (max-width: 991px)" href="style-md.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  
+  <main class="main-container">
+
+    <div class="left">
+      
+      <div class="left-items "> 
+      <div class="img-align">
+        <img src="images\image-jeremy.png" alt="" class="person-img">
+      </div>
+      <div class="disc-align">
+            <p class="small-p">Report for</p>
+            
+          <h2 class="mid-header">Jeremy </h2>
+          <h2 class="mid-header">Robson</h2>
+        
+        </div>
+      </div>
+      <div class="left-bottom-items daily">
+      <div class="btn-items">
+      <p class="interval" id="Daily">Daily</p>
+      <p class="interval" id="Weekly">Weekly</p>
+      <p class="interval" id="Monthly">Monthly</p>  
+    </div>
+    </div>
+
+    </div>
+
+  <div class="right">
+  <div class="row">
+    <div class="col-lg-4 ">
+      
+      <div class="work inner-container">
+      <img src="images\icon-work.svg" alt="icon-work" class="icon-postion">
+        
+      <div class="right-items">
+        <div class="top-disc">
+          <p>Work</p>
+          <img src="images\icon-ellipsis.svg" alt="" >
+        </div>
+        <!-- it will change in js -->
+        <div class="times">
+        <h3 class="lg-header"><span id="Current-Work">32</span>hrs</h3>
+        <p class="format Last-Work">Last Week -36hrs</p>
+      </div>
+      </div>
+      </div>
+    
+    </div>
+    <div class="col-lg-4 ">
+      <div class="play inner-container">
+        <img src="images\icon-play.svg" alt="icon-play" class="icon-postion">
+          
+      <div class="right-items">
+      <div class="top-disc">
+        <p>Play</p>
+        <img src="images\icon-ellipsis.svg" alt="" >
+      </div>
+      <!-- it will change in js -->
+      <div class="times">
+      <h3 class="lg-header" ><span id="Current-Play">10</span>hrs</h3>
+      <p class="format Last-Play">Last Week -8hrs</p>
+      </div>
+    </div>
+      </div>
+    </div>
+    <div class="col-lg-4 ">
+      <div class="study inner-container">
+        <img src="images\icon-study.svg" alt="icon-study" class="icon-postion">
+          
+      <div class="right-items">
+        <div class="top-disc">
+          <p>Study</p>
+          <img src="images\icon-ellipsis.svg" alt="" >
+        </div>
+        <!-- it will change in js -->
+        <div class="times">
+        <h3 class="lg-header"><span id="Current-Study">4</span>hrs</h3>
+        <p class="format Last-Study">Last Week -7hrs</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4 ">
+      
+      <div class="exercise inner-container">
+      <img src="images\icon-exercise.svg" alt="icon-exercise" class="icon-postion">
+        
+      <div class="right-items">
+        <div class="top-disc">
+          <p>Exercise</p>
+          <img src="images\icon-ellipsis.svg" alt="" >
+        </div>
+        <!-- it will change in js -->
+        <div class="times">
+        <h3 class="lg-header"><span id="Current-Exercise">4</span>hrs</h3>
+        <p class="format Last-Exercise">Last Week - 5hrs</p>
+        </div>
+      </div>
+      </div>
+    
+    </div>
+    <div class="col-lg-4 ">
+      <div class="social inner-container">
+        <img src="images\icon-social.svg" alt="icon-social" class="icon-postion">
+          
+      <div class="right-items">
+        <div class="top-disc">
+          <p>Social</p>
+          <img src="images\icon-ellipsis.svg" alt="" >
+        </div>
+        <!-- it will change in js -->
+        <div class="times">
+        <h3 class="lg-header"><span id="Current-Social">5</span>hrs</h3>
+        <p class="format Last-Social">Last Week - 10hrs</p>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="col-lg-4 ">
+      <div class="self-care inner-container">
+        <img src="images\icon-self-care.svg" alt="icon-Self-Care" class="icon-postion">
+          
+      <div class="right-items">
+        <div class="top-disc">
+          <p>Self Care</p>
+          <img src="images\icon-ellipsis.svg" alt="" >
+        </div>
+        <!-- it will change in js -->
+        <div class="times">
+        <h3 class="lg-header"><span id="Current-Self-Care">10</span>hrs</h3>
+        <p class="format Last-Self-Care">Last Week - 8hrs</p>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+</main>
+
+
+
+
+
+
+
+  <!-- <h1 id="title"></h1> -->
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">zainab adel</a>.
+  </footer>
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
